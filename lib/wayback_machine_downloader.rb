@@ -860,7 +860,7 @@ class WaybackMachineDownloader
         # skip if extension is empty or looks like an HTML page
         path = resolved_uri.path
         ext = File.extname(path).downcase
-        if ext.empty? || ['.html', '.htm', '.php', '.asp', '.aspx'].include?(ext)
+        if ext.empty? || ['.html', '.htm', '.php', '.asp','.jsp', '.do','.aspx'].include?(ext)
            next
         end
 
